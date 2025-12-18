@@ -1,0 +1,1142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: auto;
+    max-width: 1581px;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+/* .sect{
+    position: absolute;
+    top: 3%;
+    background: #97d785;
+    opacity: 0;
+} */
+.etsy{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.etsy p{
+    padding: 10px;
+}
+.etsy p:hover{
+    background: #f2f2f3;
+    border-radius: 20px;
+}
+#ppp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#E{
+    font-size: 70px;
+    color: #f05820;
+    font-family: jokerman;
+}
+.sect1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px 0px 20px;
+    position: relative;
+}
+.pop1{
+    position: absolute;
+    top: 100%;
+    left: 88%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #001a65;
+    color: white;
+    opacity: 0;
+}
+#heart i:hover ~ .pop1{
+    opacity: 1;
+}
+.pop2{
+    position: absolute;
+    top: 100%;
+    left: 94.3%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #001a65;
+    color: white;
+    opacity: 0;
+}
+#gift i:hover ~ .pop2{
+    opacity: 1;
+}
+.pop3{
+    position: absolute;
+    top: 100%;
+    left: 98%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #001a65;
+    color: white;
+    opacity: 0;
+}
+#basket i:hover ~ .pop3{
+    opacity: 1;
+}
+.inp input{
+    position: relative;
+    left: 2%;
+    height: 60px;
+    margin: auto;
+    width: 900px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+#glass{
+    position: relative;
+    left: -4%;
+    background: #f05820;
+    height: 50px;
+    width: 50px;
+    padding: 17px 0px 0px 5px;
+    border-radius: 70px;
+}
+.inp input::placeholder{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.inp{
+    display: flex;
+    align-items: center;
+}
+.hp:hover ~ #glass{
+    position: relative;
+    background: #f05820;
+    border-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter: brightness(1.5);
+}
+.rrr{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: -20px;
+}
+.in1{
+    padding: 10px;
+}
+.in1:hover{
+    background: #f2f2f3;
+    height: 40px;
+    width: fit-content;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+#heart{
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+#gift{
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+#basket{
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+#heart:hover{
+    background: #d8e8f9;
+    border-radius: 50px;
+}
+#gift:hover{
+    background: #d8e8f9;
+    border-radius: 50px;
+}
+#basket:hover{
+    background: #d8e8f9;
+    border-radius: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+nav a:hover{
+    background: #f2f2f3;
+    border-radius: 20px;
+}
+nav{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+hr{
+    border: 2px solid #e0e0f1;
+    margin-top: 10px;
+    width: 100%;
+}
+.div1{
+    background: rgb(56, 73, 28);
+    text-align: center;
+    height: 300px;
+    padding-top: 40px;
+    color: white;
+}
+.sp1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+.sp2{
+    font-size: 30px;
+    font-family: curlz;
+    font-weight: bold;
+}
+.sub1{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 100px 50px;
+    margin-top: -5%;
+    margin-left: 1%;
+}
+.sub2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
+.sub2{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    text-align: center;
+}
+.sub2 p{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.sub2 i{
+    transition: 0.3s ease;
+}
+.sub2 span{
+    font-family: curlz;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sub2 img:hover ~ i{
+    transform: translateX(10px);
+}
+.sub2 span:hover ~ i{
+    transform: translateX(10px);
+}
+.sub4 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
+.sub4{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    text-align: center;
+}
+.sub4 p{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.sub4 i{
+    transition: 0.3s ease;
+}
+.sub4 span{
+    font-family: curlz;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sub4 img:hover ~ i{
+    transform: translateX(10px);
+}
+.sub4 span:hover ~ i{
+    transform: translateX(10px);
+}
+.sub6{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 35px;
+}
+.sub6 span{
+    font-family: 'Playfair Display', serif;
+}
+.sub7{
+    display: flex;
+    gap: 5px;
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+.sub7:hover{
+    box-shadow: 0 0 10px black;
+}
+.sub8{
+    margin: 0px 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub9{
+    width: 350px;
+    height: 530px;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+.sub9 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sub9 img:hover{
+    box-shadow: 0 0 2px black;
+}
+.sp3{
+    font-size: 16px;
+    font-size: curlz;
+    font-weight: bold;
+}
+.sp4{
+    font-size: 18px;
+    font-size: curlz;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sp5{
+    font-size: 20px;
+    font-size: curlz;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.sp5 b{
+    color: green;
+}
+.sp6{
+    font-size: 18px;
+    font-size: curlz;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sub10{
+    position: absolute;
+    top: 2%;
+    padding-left: 15px;
+}
+.sp7{
+    background: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.sp8{
+    background: white;
+    height: 40px;
+    width: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    align-content: center;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.sub9 img:hover ~ .sp8{
+    opacity: 1;
+    transform: translateY(-10px);
+}
+.sp6 span:hover ~ i{
+    transform: translateX(10px);
+}
+.sp6 i{
+    transition: 0.3s ease;
+}
+.sect{
+    display: flex;
+    border-radius: 13px;
+    box-shadow: 0 0 10px black;
+    margin: 0px 40px 0px 40px;
+}
+.sub11{
+    background: #f0eeee;
+    height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.sub11 span{
+    font-family: curlz;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sub11:hover{
+    box-shadow: 0 0 10px black;
+    filter: brightness(0.9);
+}
+.sub13{
+    width: 50%;
+    height: 700px;
+    align-content: center;
+    padding: 0px 50px 0px 30px;
+}
+.sub12{
+    width: 50%;
+    height: 700px;
+}
+.sub12 img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.sp9{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    white-space: nowrap;
+}
+.sp10{
+    font-size: 30px;
+    font-family: curlz;
+}
+.sp11{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    align-items: center;
+}
+.sp11 b:hover ~ i{
+    transform: translateX(10px);
+}
+.sp11 i{
+    transition: 0.3s ease;
+}
+.sect2{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 0px 30px 0px 30px;
+}
+.sub16{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    box-shadow: 0 0 7px black;
+    border-radius: 10px;
+    align-items: center;
+}
+.sub14{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    box-shadow: 0 0 7px black;
+    border-radius: 10px;
+    align-items: center;
+}
+.sub16:hover{
+    box-shadow: 0 0 20px black;
+}
+.sub14:hover{
+    box-shadow: 0 0 20px black;
+}
+.sub15{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 0;
+}
+.sub15 img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.sub17 span{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    padding-left: 20px;
+}
+.sp12{
+    font-size: 20px;
+    font-family: curlz;
+    align-items: center;
+    padding-left: 20px;
+}
+.sp12 b:hover ~ i{
+    transform: translateX(10px);
+}
+.sp12 i{
+    transition: 0.3s ease;
+}
+.sub18{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.sub18 span{
+    font-family: curlz;
+}
+.sub19{
+    display: flex;
+    justify-content: space-evenly;
+}
+.subm{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    outline: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.subm img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+.subm:hover{
+    box-shadow: 0 0 10px black;
+}
+.sp13{
+    font-size: 25px;
+    font-family: curlz;
+    font-weight: bold;
+}
+.sub21{
+    display: flex;
+    margin: 0px 40px 0px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    align-items: center;
+}
+.sub22{
+    width: 50%;
+    padding-left: 40px;
+}
+.sub23{
+    height: 250px;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+.sub23 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sp14 p{
+    font-family: curlz;
+    font-size: 50px;
+}
+.sp15 p{
+    font-family: curlz;
+    font-size: 30px;
+}
+.sp16{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: curlz;
+    font-size: 20px;
+}
+.sp16 strong:hover ~ i{
+    transform: translateX(10px);
+}
+/* footer */
+.sub24{
+    background: #bde0fe;
+    font-size: 20px;
+    height: 180px;
+    text-align: center;
+    font-family: curlz;
+    font-weight: bold;
+    align-content: center;
+}
+.sub25{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.sub25 input{
+    height: 60px;
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: white;
+}
+.sub25 input::placeholder{
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub25 input:focus{
+    outline: 2px solid #3838e4;
+    outline-offset: 5px;
+}
+.sub25 input:focus ~ button{
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+.sub25 button{
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: white;
+    background: white;
+}
+.sub25 button:hover{
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+.sub26{
+    height: 100px;
+    background: #3636f3;
+    color: white;
+    align-items: center;
+}
+.glo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.glo img{
+    height: 50px;
+    width: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+.sub19 p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: curlz;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+footer{
+    position: relative;
+}
+.sub20{
+    background: white;
+    color: black;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    outline: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    opacity: 0;
+    transition: 0.2s ease;
+    font-family: curlz;
+}
+.glo img:hover ~ .sub13{
+    opacity: 1;
+}
+.glo p:hover ~ .sub13{
+    opacity: 1;
+}
+.glo p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: curlz;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+.sub27{
+    display: flex;
+    height: 350px;
+    max-height: 100%;
+}
+.sub28{
+    justify-items: center;
+    align-content: center;
+    width: 35%;
+    max-width: 100%;
+    background: #001a65;
+    color: white;
+}
+#sp25{
+    background: #f05820;
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+#sp26{
+    background: blue;
+    height: 60px;
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-family: curlz;
+    padding: 2px 20px 2px 20px;
+}
+.sub29{
+    display: flex;
+    justify-content: space-evenly;
+    background: blue;
+    width: 65%;
+    max-width: 100%;
+    line-height: 38px;
+    padding-top: 25px;
+    color: white;
+}
+.sub29 a{
+    text-decoration: none;
+    color: white;
+}
+.sub29 a:hover{
+    text-decoration: underline;
+}
+.last{
+    background: black;
+    color: white;
+    height: 100px;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sub30{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sub30 p{
+    padding: 10px 40px 10px 40px;
+}
+.sub30 p:hover{
+    background: #a4a4a4;
+    border-radius: 50px;
+    color: black;
+}
+.sub31{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.sub31 a{
+    color: white;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+}
+.icon a{
+    height: 40px;
+    width: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+.icon a:hover{
+    background: #85939f;
+    border-radius: 20px;
+}
+/* RESPONSIVE */
+@media(max-width:1570px){
+    .inp input{
+        width: 700px;
+        height: 60px;
+        max-width: 100%;
+        max-height: 100%;
+        transition: 1s ease;
+    }
+    #glass{
+        font-size: 15px;
+        left: -6%;
+        transition: 1s ease;
+    }
+    .sub8{
+        gap: 20px;
+    }
+    .sect3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 10px;
+        margin: 10px;
+    }
+    .sp9{
+        white-space: wrap;
+    }
+    .sub1{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+    }
+}
+@media(max-width:1500px){
+    .inp input{
+        width: 600px;
+        height: 60px;
+        max-width: 100%;
+        max-height: 100%;
+        transition: 1s ease;
+    }
+    #glass{
+        font-size: 15px;
+        left: -6%;
+        transition: 1s ease;
+    }
+}
+@media(max-width:1300px){
+    .sect1{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    #E{
+        font-size: 30px;
+        font-family: curlz;
+    }
+    .inp input{
+        width: 500px;
+        height: 60px;
+        max-width: 100%;
+        max-height: 100%;
+        transition: 1s ease;
+    }
+    #glass{
+        font-size: 15px;
+        left: -8%;
+        transition: 1s ease;
+    }
+    .rrr{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 0px;
+    } 
+    #heart, #gift, #basket{
+        height: 50px;
+        width: 50px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #heart i{
+        font-size: 20px;  
+    }
+    #gift i{
+        font-size: 20px;
+    }
+    #basket i{
+        font-size: 20px;
+    } 
+    nav{
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .sub1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: -10%;
+        justify-content: center;
+        gap: 150px 0px;
+    }
+    .sub2 img{
+        height: 250px;
+        width: 250px;
+        border-radius: 175px;
+    }
+    .sub4{
+        width: 100%;
+    }
+    .sub2{
+        width: 100%;
+    }
+    .sub4 img{
+        height: 250px;
+        width: 250px;
+        border-radius: 175px;
+    }
+    .sub8{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .sub9{
+        width: 100%;
+    }
+    .sub11{
+        width: fit-content;
+        padding: 10px 20px 10px 20px;
+    }
+    .sect{
+        display: block;
+    }
+    .sub12, .sub13{
+        width: 100%;
+    }
+    .sub12 img{
+        border-radius: 15px;
+    }
+    .sect2{
+        display: grid;
+    }
+    .sub14, .sub16{
+        width: 100%;
+    }
+    .sub19{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 10px;
+    }
+    .subm{
+        width: 100%;
+    }
+    .sub21{
+        display: block;
+    }
+    .sub22, .sub23{
+        width: 100%;
+    }
+    .sub23 img{
+        border-radius: 10px;
+    }
+    .sub27{
+        display: block;
+        height: fit-content;
+    }
+    #sp26{
+        background: none;
+    }
+    .sub28{
+        width: 100%;
+        padding: 10px;
+    }
+    .sub29{
+        width: 100%;
+        padding: 10px;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sub30{
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    .sub31{
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+}
+@media(max-width:1000px){
+    .sect1{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    .etsy{
+        display: flex;
+    }
+    #E{
+        font-size: 30px;
+    }
+    .inp input{
+        width: 350px;
+        height: 60px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -12%;
+    }
+    .rrr{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 0px;
+    }  
+    nav{
+        font-size: 13px;
+        text-align: center;
+    }
+    .sub1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: -10%;
+        justify-content: center;
+    }
+    .sub2 img, .sub4 img{
+        height: 200px;
+        width: 200px;
+    }
+    .sub4, .sub2{
+        width: 100%;
+    }
+    .sub8{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sub7{
+        width: fit-content;
+    }
+}
+@media(max-width:700px){
+    .etsy{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .inp input{
+        width: 560px;
+        height: 60px;
+    }
+    #E{
+        font-size: 60px;
+    }
+    .ppp i{
+        font-size: 15px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -7%;
+        transition: 1s ease;
+    }
+    .sub1{
+        gap: 100px 0px;
+    }
+    .sub2 img, .sub4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .sect1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .sub19{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .rrr{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:440px){
+    .inp input{
+        width: 350px;
+        height: 60px;
+    }
+    .ppp i{
+        font-size: 15px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -12%;
+        transition: 1s ease;
+    }
+    .sub2 img, .sub4 img{
+        height: 100px;
+        width: 100px;
+    }
+    .sect3{
+        margin: 0;
+    }
+    .sub14, .sub16{
+        display: block;
+        height: fit-content;
+        text-align: center;
+    }
+    .sub15{
+        width: 100%;
+        border-radius: 10px;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .sp1{
+        font-size: 45px;
+    }
+    .sub1{
+        gap: 50px 0px;
+    }
+    .sub6{
+        font-size: 27px;
+    }
+}
+@media(max-width:375px){
+    .inp input{
+        width: 310px;
+        height: 60px;
+    }
+    .ppp i{
+        font-size: 15px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -14%;
+        transition: 1s ease;
+    }
+}

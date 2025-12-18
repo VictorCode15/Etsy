@@ -1,0 +1,817 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: auto;
+    max-width: 1581px;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+/* .sect{
+    position: absolute;
+    top: 3%;
+    background: #97d785;
+    opacity: 0;
+} */
+.etsy{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.etsy p{
+    padding: 10px;
+}
+.etsy p:hover{
+    background: #f2f2f3;
+    border-radius: 20px;
+}
+#ppp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#E{
+    font-size: 70px;
+    color: #f05820;
+    font-family: jokerman;
+}
+.sect1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px 0px 20px;
+    position: relative;
+}
+.pop1{
+    position: absolute;
+    top: 100%;
+    left: 88%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #001a65;
+    color: white;
+    opacity: 0;
+}
+#heart i:hover ~ .pop1{
+    opacity: 1;
+}
+.pop2{
+    position: absolute;
+    top: 100%;
+    left: 94.3%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #001a65;
+    color: white;
+    opacity: 0;
+}
+#gift i:hover ~ .pop2{
+    opacity: 1;
+}
+.pop3{
+    position: absolute;
+    top: 100%;
+    left: 98%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #001a65;
+    color: white;
+    opacity: 0;
+}
+#basket i:hover ~ .pop3{
+    opacity: 1;
+}
+.inp input{
+    position: relative;
+    left: 2%;
+    height: 60px;
+    max-height: 100%;
+    margin: auto;
+    width: 900px;
+    max-width: 100%;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+#glass{
+    position: relative;
+    left: -4%;
+    background: #f05820;
+    height: 50px;
+    width: 50px;
+    padding: 17px 0px 0px 5px;
+    border-radius: 70px;
+}
+.inp input::placeholder{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.inp{
+    display: flex;
+    align-items: center;
+}
+.hp:hover ~ #glass{
+    position: relative;
+    background: #f05820;
+    border-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter: brightness(1.5);
+}
+.rrr{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: -20px;
+}
+.in1{
+    padding: 10px;
+}
+.in1:hover{
+    background: #f2f2f3;
+    height: 40px;
+    width: fit-content;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+#heart{
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+#gift{
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+#basket{
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+}
+#heart:hover{
+    background: #d8e8f9;
+    border-radius: 50px;
+}
+#gift:hover{
+    background: #d8e8f9;
+    border-radius: 50px;
+}
+#basket:hover{
+    background: #d8e8f9;
+    border-radius: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+nav a:hover{
+    background: #f2f2f3;
+    border-radius: 20px;
+}
+nav{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+.hr{
+    border: 2px solid #e0e0f1;
+    margin-top: 10px;
+    width: 100%;
+}
+.sect{
+    background: #01230e;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+.sp1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+.sp2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+.sub1{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    width: 15%;
+    height: fit-content;
+    outline: 3px solid white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 0px 15px 0px;
+    font-family: curlz;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+.sub1:hover{
+    transform: scale(1.1);
+}
+.get{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sup{
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+.sup img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+.sup span{
+    width: 100%;
+    height: 60%;
+}
+.sub2 b{
+    font-size: 30px;
+    font-family: curlz;
+}
+.sub2 b:hover{
+    text-decoration: underline;
+}
+.sub2 small{
+    font-size: 14px;
+}
+.sub2 strong{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin: auto;
+    width: 70%;
+    outline: 3px solid black;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 0px 10px 0px;
+    font-family: curlz;
+    font-size: 20px;
+}
+.sub2 strong:hover{
+    box-shadow: 0 0 10px black;
+}
+.set{
+    display: flex;
+    background: #d8d89c;
+    filter: brightness(1.2);
+    gap: 70px;
+    padding: 20px;
+}
+.sub3 img{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+}
+.sub3{
+    display: flex;
+    gap: 30px;
+}
+.sub5{
+    margin-top: -15%;
+    z-index: 1;
+    position: relative;
+}
+.sub4, .sub6{
+    margin-top: -25%;
+    z-index: 1;
+    position: relative;
+}
+.sub7, .sub3{
+    width: 100%;
+}
+.sub9{
+    display: flex;
+    gap: 20px ;
+    align-items: center;
+}
+.sub9 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+.sp5{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+.sub9 b{
+    font-family: curlz;
+    font-size: 40px;
+}
+.sub9 small{
+    font-family: curlz;
+    font-size: 30px;
+}
+.set1{
+    background: white;
+    color: black;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+    margin-top: -10%;
+}
+.sub11 img{
+    height: 130px;
+    width: 150px;
+}
+.sub11{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+.sub10{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+.sub12 div{
+    padding: 10px;
+    border-radius: 30px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s ease;
+}
+.sub12 div:hover{
+    background: #ededf5;
+}
+.sub12 hr{
+    color: #ededf5;
+}
+.sub12 span{
+    font-family: curlz;
+}
+.sub12 span, .sub12 i{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+}
+.sub13{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+.sub13 small{
+    text-decoration: underline;
+}
+/* footer */
+.sub24{
+    background: #bde0fe;
+    font-size: 20px;
+    height: 180px;
+    text-align: center;
+    font-family: curlz;
+    font-weight: bold;
+    align-content: center;
+}
+.sub25{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.sub25 input{
+    height: 60px;
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: white;
+}
+.sub25 input::placeholder{
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub25 input:focus{
+    outline: 2px solid #3838e4;
+    outline-offset: 5px;
+}
+.sub25 input:focus ~ button{
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+.sub25 button{
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: white;
+    background: white;
+}
+.sub25 button:hover{
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+.sub26{
+    height: 100px;
+    background: #3636f3;
+    color: white;
+    align-items: center;
+}
+.glo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.glo img{
+    height: 50px;
+    width: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+.sub19 p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: curlz;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+footer{
+    position: relative;
+}
+.sub20{
+    background: white;
+    color: black;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    outline: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    opacity: 0;
+    transition: 0.2s ease;
+    font-family: curlz;
+}
+.glo img:hover ~ .sub13{
+    opacity: 1;
+}
+.glo p:hover ~ .sub13{
+    opacity: 1;
+}
+.glo p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: curlz;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+.sub27{
+    display: flex;
+    height: 350px;
+    max-height: 100%;
+}
+.sub28{
+    justify-items: center;
+    align-content: center;
+    width: 35%;
+    max-width: 100%;
+    background: #001a65;
+    color: white;
+}
+#sp25{
+    background: #f05820;
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+#sp26{
+    background: blue;
+    height: 60px;
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-family: curlz;
+    padding: 2px 20px 2px 20px;
+}
+.sub29{
+    display: flex;
+    justify-content: space-evenly;
+    background: blue;
+    width: 65%;
+    max-width: 100%;
+    line-height: 38px;
+    padding-top: 25px;
+    color: white;
+}
+.sub29 a{
+    text-decoration: none;
+    color: white;
+}
+.sub29 a:hover{
+    text-decoration: underline;
+}
+.last{
+    background: black;
+    color: white;
+    height: 100px;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sub30{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sub30 p{
+    padding: 10px 40px 10px 40px;
+}
+.sub30 p:hover{
+    background: #a4a4a4;
+    border-radius: 50px;
+    color: black;
+}
+.sub31{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.sub31 a{
+    color: white;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+}
+.icon a{
+    height: 40px;
+    width: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+.icon a:hover{
+    background: #85939f;
+    border-radius: 20px;
+}
+/* responsive */
+@media(max-width:1570px){
+    .inp input{
+        width: 700px;
+        height: 60px;
+        max-width: 100%;
+        max-height: 100%;
+        transition: 1s ease;
+    }
+    #glass{
+        font-size: 15px;
+        left: -6%;
+        transition: 1s ease;
+    }
+}
+@media(max-width:1500px){
+    .inp input{
+        width: 600px;
+        height: 60px;
+        max-width: 100%;
+        max-height: 100%;
+        transition: 1s ease;
+    }
+    #glass{
+        font-size: 15px;
+        left: -6%;
+        transition: 1s ease;
+    }
+    .sub9 b{
+        font-family: curlz;
+        font-size:30px;
+    }
+    .sub9 small{
+        font-family: curlz;
+        font-size: 25px;
+    }
+}
+@media(max-width:1300px){
+    .sect1{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    #E{
+        font-size: 30px;
+    }
+    .inp input{
+        width: 500px;
+        height: 60px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -8%;
+    }
+    #heart, #gift, #basket{
+        height: 50px;
+        width: 50px;
+    }
+    #heart i{
+        font-size: 20px;  
+    }
+    #gift i{
+        font-size: 20px;
+    }
+    #basket i{
+        font-size: 20px;
+    }
+    .rrr{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 0px;
+    }  
+    nav{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .get{
+        display: grid;
+        gap: 10px;
+    }
+    .sup{
+        width: 100%;
+    }
+    .set{
+        display: block;
+    }
+    .set1{
+        margin-top: 0;
+    }
+    .sub3{
+        display: flex;
+        justify-content: center;
+    }
+    .sub1{
+        width: fit-content;
+    }
+    .sub3 img{
+        width: 100%;
+    }
+    .sub7{
+        text-align: center;
+    }
+    .sub9{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .sub27{
+        display: block;
+        height: fit-content;
+    }
+    .sub28, .sub29{
+        width: 100%;
+        padding: 10px;
+    }
+    #sp26{
+        background: none;
+    }
+    .sub30{
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    .sub31{
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+}
+@media(max-width:1000px){
+    .sect1{
+        margin: 2px;
+    }
+    #E{
+        font-size: 30px;
+    }
+    .inp input{
+        width: 240px;
+        height: 60px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -19%;
+    }
+    .rrr{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 0px;
+    }  
+    nav{
+        font-size: 13px;
+        text-align: center;
+    }
+}
+@media(max-width:700px){
+    .etsy{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .inp input{
+        width: 580px;
+        height: 60px;
+    }
+    #E{
+        font-size: 60px;
+    }
+    .ppp i{
+        font-size: 15px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -7%;
+        transition: 1s ease;
+    }
+    .sect1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .rrr{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sup3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sup2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sub25 input{
+        width: 300px;
+    }
+}
+@media(max-width:430px){
+    .inp input{
+        width: 400px;
+        height: 60px;
+    }
+    .ppp i{
+        font-size: 15px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -12%;
+        transition: 1s ease;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+@media(max-width:360px){
+    .inp input{
+        width: 360px;
+        height: 60px;
+    }
+    .ppp i{
+        font-size: 15px;
+    }
+    #glass{
+        font-size: 15px;
+        left: -12%;
+        transition: 1s ease;
+    }
+}
